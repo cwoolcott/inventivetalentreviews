@@ -1,0 +1,251 @@
+/* here you can put your own css to customize and override the theme */
+
+.login {
+  background-color: #3c5224 !important;
+}
+
+#loginlogo {
+  width: 100%;
+  max-width: 470px;
+}
+
+.green-haze.btn {
+  background-color:#81ab55;
+}
+
+.green-haze.btn:hover {
+  background-color:#6b8e47;
+}
+
+.logo-default {
+  margin-top:1px !important;
+  width:120%;
+  max-width: 280px;
+}
+
+.username {
+padding-top:10px;
+}
+
+.page-header .page-header-menu {
+  background-color: #3c5224;
+}
+
+.page-header .page-header-menu .hor-menu .navbar-nav > li > a {
+  color:white;
+}
+.page-header .page-header-menu .search-form .input-group .form-control,  .input-group-btn {
+
+  background-color: white;
+}
+
+.page-header .page-header-menu .search-form .input-group .input-group-btn .btn.submit > i {
+  color: #eeeeee;
+}
+
+ .page-header .page-header-menu .hor-menu .navbar-nav > li.open > a,
+      .page-header .page-header-menu .hor-menu .navbar-nav > li > a:hover {
+        color: #ffffff;
+        background: #557434 !important; }
+
+.page-header .page-header-menu .hor-menu .navbar-nav > li.active > a, 
+.page-header .page-header-menu .hor-menu .navbar-nav > li.active > a:hover, 
+.page-header .page-header-menu .hor-menu .navbar-nav > li.current > a, 
+.page-header .page-header-menu .hor-menu .navbar-nav > li.current > a:hover {
+
+    color: #ffffff;
+        background: #557434 !important; }
+}
+
+
+
+.page-header .page-header-top .top-menu .navbar-nav > li.dropdown-user > .dropdown-toggle > .username {
+  color: #565656;
+}
+
+.page-header .page-header-top .top-menu .navbar-nav > li.dropdown-dark .dropdown-menu {
+   background-color: #45612d;
+    border: 0;
+}
+
+
+.page-content {
+  background-color: #e5e5e5;
+}
+
+.page-prefooter {
+  background-color:#557434;
+}
+
+.page-footer {
+   background-color: #45612d;
+}
+
+.footer-block, .page-prefooter h2{
+  color:white;
+}
+
+.page-prefooter a {
+  color: white;
+}
+
+/* wizard */
+
+.font-green-sharp {
+
+     color: #45612d  !important;
+}
+
+.form-wizard .steps > li.active > a.step .number {
+    background-color: #45612d  !important;
+}
+
+a {
+  text-shadow: none;
+  color: #000000;
+}
+
+.progress > .progress-bar-success {
+  background-color: #45612d;
+}
+
+.blue.btn, .btn-primary {
+  background-color: #45612d;
+  }
+
+.blue.btn:hover, .blue.btn:focus, .blue.btn:active, .blue.btn.active, .btn-primary.active {
+  color: #FFFFFF;
+  background-color: #6b8e47;
+}
+
+.green.btn {
+  background-color: #6b8e47;
+}
+
+.panel-primary > .panel-heading {
+    background-color: #45612d;
+    border-color:black;
+  }
+
+.coloredSlider {
+    float: left;
+    clear: left;
+    width: 600px;
+    margin: 15px;
+    border:1px solid black;
+}
+.coloredSlider .ui-slider-range { 
+    background: #ff0000; 
+}
+
+.coloredSlider .ui-state-default, .ui-widget-content .ui-state-default {
+    background: none;
+    background-color: #FFF;
+}
+
+.bottom
+{
+    width:300px;
+}
+
+.popovers
+{
+    width:16px;
+    font-size:8px;
+    padding:2px;
+    background-color: #45612d;
+}
+
+
+.ui-widget-content {
+    /*background: #f0f2f7 !important;*/
+    border: none !important;
+    border-radius: 15px !important;
+    -webkit-border-radius: 15px !important;
+}
+
+.ui-slider-horizontal {
+    height: 8px !important;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -0.57em   !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: #fff !important;
+    /*border: 3px solid #22bacf !important;*/
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+}
+
+.ui-slider-vertical {
+    width: 8px !important;
+}
+
+.ui-slider-vertical .ui-slider-handle {
+    left: -0.5em  !important;
+}
+
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 1.2em;
+  height: 1.2em;
+  cursor: default;
+  margin-top: 17px;
+}
+
+#coloredSlider_current .ui-slider-handle, #coloredSlider_cumulative .ui-slider-handle
+{
+ width: 1px;
+}
+
+.bound-s {
+    width: 90px;
+    margin-bottom: 15px;
+}
+
+
+  .hover
+{
+    cursor:pointer;
+}
+#leftmatrix {
+    text-align:right;
+    
+    height:395px;
+    width:150px;
+    float:left;
+    padding:5px;        
+}
+
+div#contain
+{
+   background: url('http://inventivetalentreviews.com/img/itr9box.jpg') no-repeat 0 0 scroll;
+    border:2px solid black;
+    height:400px;
+    min-width:450px;
+    float:left;
+    width:697px;
+}
+div#containsteps
+{
+   /* background: url('http://inventivetalentreviews.com/img/itr9box.jpg') no-repeat 0 0 scroll; */
+    background-color: white;
+    border:2px solid black;
+    height:400px;
+    min-width:450px;
+    float:left;
+    width:697px;
+}
+#lowermatrix {
+    
+    color:black;
+    clear:both;
+    text-align:left; 
+    width:805px;
+    height:120px
+}
+

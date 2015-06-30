@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.4
+Version: 4.0.1
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8"/>
+<title>Inventive Talent Reviews | Administration</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN PAGE LEVEL STYLES -->
+<link rel="stylesheet" type="text/css" href="../../assets/global/plugins/select2/select2.css"/>
+<link rel="stylesheet" type="text/css" href="../../assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="../../assets/custom/css/bootstrap-slider.css" rel="stylesheet">
+<!-- END PAGE LEVEL STYLES -->
+<!-- BEGIN THEME STYLES -->
+<link href="../../assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css">
+<link href="../../assets/global/css/plugins.css" rel="stylesheet" type="text/css">
+<link href="../../assets/admin/layout3/css/layout.css" rel="stylesheet" type="text/css">
+<link href="../../assets/admin/layout3/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color">
+<link href="../../assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css">
+<!-- END THEME STYLES -->
+<link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<!-- DOC: Apply "page-header-menu-fixed" class to set the mega menu fixed  -->
+<!-- DOC: Apply "page-header-top-fixed" class to set the top menu fixed  -->
+<body>
+<!-- BEGIN HEADER -->
+<div class="page-header">
+	<!-- BEGIN HEADER TOP -->
+	<div class="page-header-top">
+		<div class="container">
+			<!-- BEGIN LOGO -->
+			<div class="page-logo">
+				<a href="index.html"><img src="../../assets/admin/layout3/img/itrlogo.png" alt="logo" class="logo-default"></a>
+			</div>
+			<!-- END LOGO -->
+			<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+			<a href="javascript:;" class="menu-toggler"></a>
+			<!-- END RESPONSIVE MENU TOGGLER -->
+			<!-- BEGIN TOP NAVIGATION MENU -->
+			<div class="top-menu">
+				<ul class="nav navbar-nav pull-right">
+
+					<!-- END NOTIFICATION DROPDOWN -->
+					<!-- BEGIN TODO DROPDOWN -->
+					
+					<!-- END INBOX DROPDOWN -->
+					<!-- BEGIN USER LOGIN DROPDOWN -->
+					<li class="dropdown dropdown-user dropdown-dark">
+						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+							<!--
+						<img alt="" class="img-circle" src="../../assets/admin/layout3/img/avatar9.jpg">
+					-->
+						<span class="username username-hide-mobile">User</span>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-default">
+						
+							<li>
+								<a href="login.html">
+								<i class="icon-key"></i> Log Out </a>
+							</li>
+						</ul>
+					</li>
+					<!-- END USER LOGIN DROPDOWN -->
+				</ul>
+			</div>
+			<!-- END TOP NAVIGATION MENU -->
+		</div>
+	</div>
+	<!-- END HEADER TOP -->
+	<!-- BEGIN HEADER MENU -->
+	<div class="page-header-menu">
+		<div class="container">
+			<!-- BEGIN HEADER SEARCH BOX -->
+			<form class="search-form" action="extra_search.html" method="GET">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search" name="query">
+					<span class="input-group-btn">
+					<a href="javascript:;" class="btn submit"><i class="icon-magnifier"></i></a>
+					</span>
+				</div>
+			</form>
+			<!-- END HEADER SEARCH BOX -->
+			<!-- BEGIN MEGA MENU -->
+			<!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
+			<!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the dropdown opening on mouse hover -->
+			<div class="hor-menu ">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="user_candidates.html">Candidates</a>
+					</li>
+					<li >
+						<a href="user_rating.html">Rating</a>
+					</li>
+					<li>
+						<a href="user_performance.html">Performance</a>
+					</li>
+					<li>
+						<a href="user_matrix.html">Matrix</a>
+					</li>
+					
+				</ul>
+			</div>
+			<!-- END MEGA MENU -->
+		</div>
+	</div>
+	<!-- END HEADER MENU -->
+</div>
+<!-- END HEADER -->
+<!-- BEGIN PAGE CONTAINER -->
+<div class="page-container">
+	<!-- BEGIN PAGE HEAD -->
+	<div class="page-head">
+		<div class="container">
+			<!-- BEGIN PAGE TITLE -->
+			<div class="page-title">
+				<h1>Company CC<small></small></h1>
+			</div>
+			<!-- END PAGE TITLE -->
+			<!-- BEGIN PAGE TOOLBAR -->
+			<div class="page-toolbar">
+				<!-- BEGIN THEME PANEL -->
+				<div class="btn-group btn-theme-panel">
+				
+					
+				</div>
+				<!-- END THEME PANEL -->
+			</div>
+			<!-- END PAGE TOOLBAR -->
+		</div>
+	</div>
+	<!-- END PAGE HEAD -->
+	<!-- BEGIN PAGE CONTENT -->
+	<div class="page-content">
+		<div class="container">
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+							<h4 class="modal-title">Modal title</h4>
+						</div>
+						<div class="modal-body">
+							 Widget settings form goes here
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn blue">Save changes</button>
+							<button type="button" class="btn default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<!-- BEGIN PAGE BREADCRUMB -->
+			<ul class="page-breadcrumb breadcrumb">
+				<li>
+					<a href="#">Home</a><i class="fa fa-circle"></i>
+				</li>
+				<li>
+					<a href="layout_blank_page.html">Company CC</a>
+					<i class="fa fa-circle"></i>
+				</li>
+				<li class="active">
+					 Section
+				</li>
+			</ul>
+			<!-- END PAGE BREADCRUMB -->
+			<div class="row">
+				<div class="col-md-12" style="margin:auto 0">
+					<!-- BEGIN EXAMPLE TABLE PORTLET-->
+
+					 <div class="form" style="width:800px;margin: 0 auto;">
+                                  <form class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+                                    
+                                    
+                                      <div class="form-group ">     
+                                        <div class="panel panel-primary">
+                                          <div class="panel-heading">Fundamentals</div>
+                                        </div>          
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2"></label>
+                                          <div class="col-lg-10">
+                                            <div class="col-lg-10">
+<table style="margin:15px; width:100%">
+<tbody><tr>
+<td style="background-color:#D06559; padding:5px; width:200px; text-align:center; border-bottom: 1px solid gray !important; ">Marginal</td>
+<td style="background-color:#C0C0C0; padding:5px; width:200px; text-align:center; border-bottom: 1px solid gray !important; ">Expected</td>
+<td style="background-color:#FFD700; padding:5px; width:200px; text-align:center; border-bottom: 1px solid gray !important; ">Distinctive</td></tr>
+
+<tr>
+<td style="background-color:#D06559; padding:5px; width:200px; text-align:center; border-bottom: 1px solid gray !important; ">Below normal range and failing to meet expectations</td>
+<td style="background-color:#C0C0C0; padding:5px; width:200px; text-align:center; border-bottom: 1px solid gray !important; ">Within normal range and generally meeting expectations</td>
+<td style="background-color:#FFD700; padding:5px; width:200px; text-align:center; border-bottom: 1px solid gray !important; ">Truly exceptional and far exceeding almost all others</td></tr>
+
+<tr>
+<td style="background-color:#D06559; padding:5px; width:200px; text-align:center; border-bottom: 1px solid gray !important; ">Marginal Contributors</td>
+<td style="background-color:#C0C0C0; padding:5px; width:200px; text-align:center; border-bottom: 1px solid gray !important; ">Solid Contributors</td>
+<td style="background-color:#FFD700; padding:5px; width:200px; text-align:center; border-bottom: 1px solid gray !important; ">Distinctive Contributors</td></tr>
+
+<tr>
+<td style="background-color:#D06559; padding:5px; width:200px; text-align:center; border-bottom: 1px solid gray !important; ">Performace Issues</td>
+<td style="background-color:#C0C0C0; padding:5px; width:200px; text-align:center; border-bottom: 1px solid gray !important; ">Valued Performers</td>
+<td style="background-color:#FFD700; padding:5px; width:200px; text-align:center; border-bottom: 1px solid gray !important; ">Top Performers</td></tr>
+
+</tbody></table>                                          </div>
+                                          </div>
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2">General Cognitive Capability
+                                          <button data-original-title="General Cognitive Capability" data-content="Intelligence needed to deal with the complexities and uncertainties encountered in senior leadership roles." data-placement="bottom" data-trigger="hover" class="btn btn-info popovers">?</button>
+                                        </label>
+                                          <div class="col-lg-10">
+                                              <div class="topslider coloredSlider" id="coloredSlider1"></div>
+                                          </div>
+                                          <!--<div id="myDiv"></div>-->
+                                      </div>
+                                     <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2">Energy and Achievement Orientation
+                                            <button data-original-title="Energy and Achievement Orientation" data-content="Ambition and drive needed to achieve success in senior leadership roles" data-placement="bottom" data-trigger="hover" class="btn btn-info popovers">?</button>
+                                          </label>
+                                          <div class="col-lg-10">
+                                              <div class="topslider coloredSlider" id="coloredSlider2"></div>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2">Cultural Fit
+                                          <button data-original-title="Cultural Fit" data-content="Personality traits and values aligned with the organization's culture." data-placement="bottom" data-trigger="hover" class="btn btn-info popovers">?</button>
+                                        </label>
+                                          <div class="col-lg-10">
+                                              <div class="topslider coloredSlider" id="coloredSlider3"></div>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="form-group ">     
+                                        <div class="panel panel-primary">
+                                          <div class="panel-heading">Compentencies</div>
+                                        </div>          
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2"></label>
+                                          <div class="col-lg-10">
+												<table style="margin:15px">
+												<tbody><tr>
+												<td style="background-color:#D06559; padding:5px; width:200px; text-align:center">Marginal</td>
+												<td style="background-color:#C0C0C0; padding:5px; width:200px; text-align:center">Expected</td>
+												<td style="background-color:#FFD700; padding:5px; width:200px; text-align:center">Distinctive</td>
+												</tr>
+												</tbody></table>
+                                          </div>
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2">Execution
+                                            <button data-original-title="Execution" data-content="Manages Business Results; Demonstrates Technical Competence; Sets Clear Priorities; Improves Processes." data-placement="bottom" data-trigger="hover" class="btn btn-info popovers">?</button>
+                                          </label>
+                                          <div class="col-lg-10">
+                                              <div class="topslider coloredSlider" id="coloredSlider4"></div>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2">Judgement
+                                          <button data-original-title="Judgement" data-content="Understands the Business; Thinks Strategically; Masters Complex Data; Applies Sound Intuition." data-placement="bottom" data-trigger="hover" class="btn btn-info popovers">?</button>
+                                        </label>
+                                          <div class="col-lg-10">
+                                              <div class="topslider coloredSlider" id="coloredSlider5"></div>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2">Relationships
+                                            <button data-original-title="Relationships" data-content="Establishes Personal Connections; Leads High-Functioning Teams; Confronts and Resolves Conflicts; Leverages Diversity." data-placement="bottom" data-trigger="hover" class="btn btn-info popovers">?</button>
+                                          </label>
+                                          <div class="col-lg-10">
+                                              <div class="topslider coloredSlider" id="coloredSlider6"></div>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2">Influences
+                                            <button data-original-title="Influences" data-content="Establishes Credibility; Communicates Effectively; Negotiates Persuasively; Teaches and Coaches Others." data-placement="bottom" data-trigger="hover" class="btn btn-info popovers">?</button>
+                                          </label>
+                                          <div class="col-lg-10">
+                                              <div class="topslider coloredSlider" id="coloredSlider7"></div>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2">Inspiration
+                                          <button data-original-title="Inspiration" data-content="Listens Well; Engages Employees; Motivates Others; Sets Challenging Goals." data-placement="bottom" data-trigger="hover" class="btn btn-info popovers">?</button>
+                                        </label>
+                                          <div class="col-lg-10">
+                                              <div class="topslider coloredSlider" id="coloredSlider8"></div>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2">Innovation
+                                            <button data-original-title="Innovation" data-content="Generates Creative Solutions; Implements Solutions Strategically; Advantageously Differentiates Solutions; Shepherds Ideas through Implementation." data-placement="bottom" data-trigger="hover" class="btn btn-info popovers">?</button>
+                                          </label>
+                                          <div class="col-lg-10">
+                                              <div class="topslider coloredSlider" id="coloredSlider9"></div>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2">Learning
+                                            <button data-original-title="Learning" data-content="Explores New Spheres of Knowledge; Studies Intently; Reflects Deeply; Actively Seeks Feedback." data-placement="bottom" data-trigger="hover" class="btn btn-info popovers">?</button>
+                                          </label>
+                                          <div class="col-lg-10">
+                                              <div class="topslider coloredSlider" id="coloredSlider10"></div>
+                                          </div>
+                                          
+                                      </div>
+
+                                      <div class="form-group ">     
+                                        <div class="panel panel-primary">
+                                          <div class="panel-heading">Learning Agility</div>
+                                        </div>          
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2"></label>
+                                          <div class="col-lg-10">
+                                            <table style="margin:15px">
+												<tbody><tr>
+												<td style="background-color:#D06559; padding:5px; width:200px; text-align:center">Marginal</td>
+												<td style="background-color:#C0C0C0; padding:5px; width:200px; text-align:center">Expected</td>
+												<td style="background-color:#FFD700; padding:5px; width:200px; text-align:center">Distinctive</td>
+												</tr>
+												</tbody></table>
+                                          </div>
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2">Ingenuity
+                                            <button data-original-title="Ingenuity" data-content="Embraces Complexity; Highly Curious; Has a Broad Perspective; Risks Failure in Order to Learn" data-placement="bottom" data-trigger="hover" class="btn btn-info popovers">?</button>
+                                          </label>
+                                          <div class="col-lg-10">
+                                              <div class="topslider coloredSlider" id="coloredSlider11"></div>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2">People Smart
+                                            <button data-original-title="People Smart" data-content="Empathizes; Reads Others Well; Understands the Motives of Others; Adapts to Optimize Relationships" data-placement="bottom" data-trigger="hover" class="btn btn-info popovers">?</button>
+                                          </label>
+                                          <div class="col-lg-10">
+                                              <div class="topslider coloredSlider" id="coloredSlider12"></div>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2">Change Leader
+                                            <button data-original-title="Change Leader" data-content="Never Satisfied with Current State; Likes to Experiment; Resourceful in Driving Change." data-placement="bottom" data-trigger="hover" class="btn btn-info popovers">?</button>
+                                          </label>
+                                          <div class="col-lg-10">
+                                              <div class="topslider coloredSlider" id="coloredSlider13"></div>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2">Composed Under Pressure
+                                            <button data-original-title="Composed Under Pressure" data-content=" Optimistic; Resilient; High Tolerance for Stress; Energized by Difficulties that Paralyze Others." data-placement="bottom" data-trigger="hover" class="btn btn-info popovers">?</button>
+                                          </label>
+                                          <div class="col-lg-10">
+                                              <div class="topslider coloredSlider" id="coloredSlider14"></div>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2">Personal Insight
+                                            <button data-original-title="Personal Insight" data-content="Confident but not Self-Satisfied; Recognizes Weaknesses; Sensitive and Receptive to Feedback" data-placement="bottom" data-trigger="hover" class="btn btn-info popovers">?</button>
+                                          </label>
+                                          <div class="col-lg-10">
+                                              <div class="topslider coloredSlider" id="coloredSlider15"></div>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2">Adapts Easily
+                                          <button data-original-title="Adapts Easily" data-content="High Tolerance for Ambiguity; Comfortable with Uncertainty; Learns Quickly to Adapt to New Situations." data-placement="bottom" data-trigger="hover" class="btn btn-info popovers">?</button>
+                                        </label>
+                                          <div class="col-lg-10">
+                                              <div class="topslider coloredSlider" id="coloredSlider16"></div>
+                                          </div>
+                                          
+                                      </div>
+                           
+
+                                      <div class="form-group " style="text-align:center">
+                                        <a href="/site/candidates" data-toggle="modal" class="btn btn-primary">
+                                            Candidates
+                                          </a>
+                                          &nbsp; 
+                                          <a href="/site/matrix" data-toggle="modal" class="btn btn-primary">
+                                            ITR Matrix
+                                          </a>
+                                      </div>
+                                      
+                                  </form>
+                              </div>
+					<!-- END EXAMPLE TABLE PORTLET-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END PAGE CONTENT -->
+</div>
+<!-- END PAGE CONTAINER -->
+<!-- BEGIN PRE-FOOTER -->
+<div class="page-prefooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+				<h2>Inventive Talent Review V.02</h2>
+				<p>
+					 Watch this space for updated information on latest releases and updates.
+				</p>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs12 footer-block">
+
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+				<h2>24 Hour Support</h2>
+				<address class="margin-bottom-40">
+				 Phone: 800 123 3456<br>
+				 Email: <a href="mailto:info@metronic.com">info@inventivetalentreviews.com</a>
+				</address>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END PRE-FOOTER -->
+<!-- BEGIN FOOTER -->
+<div class="page-footer">
+	<div class="container">
+		 2015 &copy; Inventive Talent Reviews 
+	</div>
+</div>
+<div class="scroll-to-top">
+	<i class="icon-arrow-up"></i>
+</div>
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="../../assets/global/plugins/respond.min.js"></script>
+<script src="../../assets/global/plugins/excanvas.min.js"></script> 
+<![endif]-->
+<script src="../../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="../../assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script type="text/javascript" src="../../assets/global/plugins/select2/select2.min.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+
+<script src="../../assets/custom/scripts/itr_colorslider_rating.js"></script>
+<script src="../../assets/custom/scripts/itr_colorslider.js"></script>
+<script src="../../assets/custom/scripts/bootstrap-slider.js"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="../../assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout3/scripts/layout.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout3/scripts/demo.js" type="text/javascript"></script>
+<script src="../../assets/admin/pages/scripts/table-editable.js"></script>
+<script>
+jQuery(document).ready(function() {       
+   Metronic.init(); // init metronic core components
+Layout.init(); // init current layout
+Demo.init(); // init demo features
+   TableEditable.init();
+});
+</script>
+</body>
+<!-- END BODY -->
+</html>
